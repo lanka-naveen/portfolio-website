@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="port.css">
+
+    <!-- Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/textillate.js@0.4.0/assets/jquery.lettering.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/textillate.js@0.4.0/jquery.textillate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="header-text">Your Name or Logo</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#memberships">Memberships</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container">
+            <div class="home-content">
+                <h1>Welcome to My Portfolio</h1>
+                <p>I'm Lanka Naveen, a passionate Software Developer specializing in Computer Science and Engineering.</p>
+                <a href="#about" class="btn">Learn More About Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="naveensscchslphoto123.jpg" alt="Lanka.Naveen" class="profile-img">
+                <div class="about-text">
+                    <p>Hello! I'm <strong>Lanka.Naveen</strong>, a software engineer specializing in Artificial Intelligence and Machine Learning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-entry">
+                <h3>University College of Engineering Narasaraopet, JNTUK</h3>
+                <p>B.Tech in Computer Science and Engineering</p>
+                <p>2019 - 2023</p>
+            </div>
+            <!-- Additional education entries as needed -->
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Top Scorer in Machine Learning course at XYZ Platform</li>
+                <li>Winner of Coding Hackathon, 2021</li>
+                <!-- Add more achievements as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Memberships Section -->
+    <section id="memberships" class="section">
+        <div class="container">
+            <h2>Memberships</h2>
+            <ul>
+                <li>IEEE Member</li>
+                <li>Member of AI & ML Club at University</li>
+                <!-- Add more memberships as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <img src="tcm12.jpg" alt="Traffic Control Management System" class="project-img">
+                    <h3>Traffic Control Management System</h3>
+                    <p>Developed an advanced system to optimize traffic flow and reduce congestion in urban areas.</p>
+                </div>
+                <div class="project">
+                    <img src="rest.png" alt="Restaurant App" class="project-img">
+                    <h3>Restaurant App Using Dart</h3>
+                    <p>Built a Restaurant App using Dart and Flutter, improving user experience for restaurant customers.</p>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <img src="mac.jpg" alt="Machine Learning" class="skill-icon">
+                    <h3>Machine Learning</h3>
+                </div>
+                <div class="skill">
+                    <img src="art.jpg" alt="Artificial Intelligence" class="skill-icon">
+                    <h3>Artificial Intelligence</h3>
+                </div>
+                <div class="skill">
+                    <img src="ds.jfif" alt="Data Science" class="skill-icon">
+                    <h3>Data Science</h3>
+                </div>
+                <div class="skill">
+                    <img src="da.jfif" alt="Data Analysis" class="skill-icon">
+                    <h3>Data Analysis</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="http://localhost:5500/contact" method="POST" id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Lanka Naveen</p>
+    </footer>
+    
+    <!-- JavaScript for Animations -->
+    <script src="port.js"></script>
+</body>
+</html>
